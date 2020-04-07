@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+
+<body>
+     {{> header}}
+    <h1>{{title}} of {{name}}</h1>
+
+    <form>
+        <input type='text' placeholder="Enter the place" >
+        <input type='submit' value='submit'>
+        </form>
+
+        <p id="message1"></p>
+        <p id="message2"></p>
+
+    {{> footer}}
+</body>
+<script src="/js/app.js"></script> <!-- So that the script is loaded at last otherwise we will not be able to get the elements of the page-->
+</html>
