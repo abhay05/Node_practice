@@ -9,7 +9,7 @@ form.addEventListener('submit',(e)=>{
     e.preventDefault() // to prevent the refreshing of the page after the search button is pressed
 
     const city=val.value
-    const url='http://localhost:3000/weather?address=' + city
+    const url='/weather?address=' + city  // 'http://localhost:3000/weather?address=' + city for local
     message1.textContent="Loading..."
     message2.textContent=""
     fetch(url).then((response)=>{
